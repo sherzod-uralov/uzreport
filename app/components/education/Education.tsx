@@ -5,52 +5,50 @@ import { useTranslations } from "next-intl";
 const Education = () => {
   const t = useTranslations("education");
   return (
-    <section className="mt-16">
+    <section className="mt-32">
       <article className="container max-sm:flex-col max-sm:justify-center">
-
-        <h1 className="text-[40px] font-bold leading-[53px] tracking-[-1px] text-[#042552] mb-6 max-sm:text-[35px] max-sm:text-center">
+        <h1 className="text-[40px] font-bold leading-[53px] tracking-[-1px] text-[#042552] mb-[41px] max-sm:text-[35px] max-sm:text-center">
           {t("yonalish")}
         </h1>
         <div className="w-full">
           <EducationChild
-              kod="60320100"
-              price="3200000"
-              name={t("jurnalistika")}
-              period={t("kunduzgi")}
-              period2={t("bakalavr")}
-              grant1={20}
-              grant2={100}
-              gacha={t("gacha")}
-              dan={t("dan")}
+            kod="60320100"
+            price="3200000"
+            name={t("jurnalistika")}
+            period={t("kunduzgi")}
+            period2={t("bakalavr")}
+            grant1={20}
+            grant2={100}
+            gacha={t("gacha")}
+            dan={t("dan")}
           />
         </div>
         <div className="w-full">
           <EducationChild
-              kod="60320100"
-              price="3200000"
-              name={t("jurnalistika")}
-              period={t("kunduzgi")}
-              period2={t("bakalavr")}
-              grant1={20}
-              grant2={100}
-              gacha={t("gacha")}
-              dan={t("dan")}
+            kod="60320100"
+            price="3200000"
+            name={t("jurnalistika")}
+            period={t("kunduzgi")}
+            period2={t("bakalavr")}
+            grant1={20}
+            grant2={100}
+            gacha={t("gacha")}
+            dan={t("dan")}
           />
         </div>
         <div className="w-full">
           <EducationChild
-              kod="60320100"
-              price="3200000"
-              name={t("jurnalistika")}
-              period={t("kunduzgi")}
-              period2={t("bakalavr")}
-              grant1={20}
-              grant2={100}
-              gacha={t("gacha")}
-              dan={t("dan")}
+            kod="60320100"
+            price="3200000"
+            name={t("jurnalistika")}
+            period={t("kunduzgi")}
+            period2={t("bakalavr")}
+            grant1={20}
+            grant2={100}
+            gacha={t("gacha")}
+            dan={t("dan")}
           />
         </div>
-
       </article>
     </section>
   );

@@ -20,7 +20,7 @@ const Hero = () => {
   const t = useTranslations("hero");
 
   return (
-    <section className="mt-[150px] max-sm:mt-[20px] relative">
+    <section className="mt-[150px] max-lg:mt-[70px] max-sm:mt-[20px] relative">
       <article className="container">
         <Image
           className="absolute right-2 max-xl:hidden"
@@ -35,14 +35,14 @@ const Hero = () => {
             <p className="text-[36px] font-[500] leading-[40px] max-sm:text-[22px] pt-[7px] max-md:w-auto w-[665px]">
               {t("hero_p")} <span className="text-primary">{t("hero_p1")}</span>
             </p>
-            <div className="flex justify-between max-sm:items-start max-sm:shadow-none max-sm:py-2 max-sm:pl-0 max-sm:rounded-xl max-sm:flex-col items-center shadow-gray-200 shadow-xl rounded-full pl-3 gap-[17px] max-sm:mt-2 mt-[40px]">
+            <div className="flex justify-between max-sm:items-start max-sm:shadow-none max-sm:py-2 max-sm:pl-0 max-sm:rounded-xl max-sm:flex-col items-center shadow-gray-200 box-shadow-hero rounded-full pl-3 gap-[17px] max-sm:mt-2 mt-[40px]">
               <div className="flex gap-3 max-sm:hidden max-sm:pl-3">
                 <Image src={pencil} alt="pen" />
                 <p className="text-[16px] text-[#8191A8] font-[500]">
                   {t("agency")}
                 </p>
               </div>
-              <span className="border-gray-200 max-sm:hidden h-[24px] rotate-0 max-sm:w-full max-sm:h-auto max-sm:border-[1px] block border-[2px]"></span>
+              <span className="border-gray-200 max-sm:hidden h-[24px] rotate-0 max-sm:w-full max-sm:h-auto max-sm:border-[1px] block border-[1px]"></span>
               <div className="flex gap-3 max-sm:hidden max-sm:pl-3">
                 <Image src={location} alt="pen" />
                 <p className="text-[16px] text-[#8191A8] font-[500]">
