@@ -15,7 +15,7 @@ const Vacations = () => {
   const t = useTranslations("vacations");
   console.log(t("cards"));
   return (
-    <section className="pt-[360px]  max-sm:pt-[100px]" >
+    <section className="pt-[360px]  max-sm:pt-[700px]" >
         <article className="container " >
             <div className="flex justify-center items-center mt-5 mb-[74px] ">
                 <Image src={dots} alt="dots" className="left-0 absolute w-[70px] max-xl:hidden"/>
@@ -23,7 +23,7 @@ const Vacations = () => {
                     {t("title1")}  <span className="text-[#3D9386]">{t("title2")} </span>   {t("title3")}
                 </h1>
             </div>
-            <div className="grid grid-cols-4 gap-[24px] max-sm:grid-cols-1 justify-center ">
+            <div className="flex  flex-wrap gap-[24px] flex-shrink-[2]  justify-center ">
                 {[
                     cardImg1,
                     cardImg2,
@@ -34,7 +34,7 @@ const Vacations = () => {
                     cardImg7,
                     cardImg8,
                 ].map((i, e) => (
-                    <div className="flex border border-solid border-[#EBEFF6] w-[306px] rounded-md  items-center max-sm:w-full ">
+                    <div className="flex border border-solid border-[#EBEFF6] w-[300px] flex-grow-[2] rounded-md  items-center max-sm:w-full  max-lg:w-full ">
                         <div
                             style={{backgroundColor: t(`cards.${e}.cardColor`)}}
                             className="w-[60px] h-[60px] flex justify-center items-center ml-[30px] mt-[30px] mb-[30px] rounded-[10px]"
