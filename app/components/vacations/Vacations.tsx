@@ -23,7 +23,7 @@ const Vacations = () => {
             alt="dots"
             className="left-0 absolute w-[70px] max-xl:hidden"
           />
-          <h1 className=" text-[40px] font-bold leading-[53px] tracking-[-1px] text-center max-sm:text-[17px] max-sm:leading-none max-sm:tracking-normal max-lg:text-[18] ">
+          <h1 className=" text-[40px] font-bold leading-[53px] tracking-[-1px] text-center max-sm:text-[17px] max-sm:leading-none max-sm:tracking-normal max-lg:text-xl ">
             {t("title1")} <span className="text-[#3D9386]">{t("title2")} </span>{" "}
             {t("title3")}
           </h1>
