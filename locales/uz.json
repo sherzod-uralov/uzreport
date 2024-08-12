@@ -16,6 +16,52 @@
     "network": "Tarmoq",
     "company": "Korxona",
     "university_section": "Oliy ta'lim muassasasi"
+  },
+  "vacations": {
+    "title": "Talabalar uchun o‘qish davomida “UzReport TV”, “FTV” telekanallarida quyidagi ish o'rinlarida daromad topish imkoniyati yaratiladi.",
+    "cards": [
+      {
+        "title": "Muxbir",
+        "slots": "4 ta o'rin",
+        "cardColor":"#645CFE"
+      },
+      {
+        "title": "Suxandon",
+        "slots": "5 ta o'rin",
+        "cardColor":"#FFB619"
+      },
+      {
+        "title": "Operator",
+        "slots": "3 ta o'rin",
+        "cardColor": "#FF1181"
 
+
+      },
+      {
+        "title": "Montaj ustasi",
+        "slots": "5 ta o'rin",
+        "cardColor": "#3D9386"
+      },
+      {
+        "title": "Texnik xodim",
+        "slots": "3 ta o'rin",
+        "cardColor": "#46658B"
+      },
+      {
+        "title": "Kontent menejer",
+        "slots": "4 ta o'rin",
+        "cardColor": "#FF6C40"
+      },
+      {
+        "title": "Ovoz muhandisi",
+        "slots": "2 ta o'rin",
+        "cardColor": "#02C3FE"
+      },
+      {
+        "title": "SMM yordamchi",
+        "slots": "3 ta o'rin",
+        "cardColor": "#FFB619"
+      }
+    ]
   }
 }
