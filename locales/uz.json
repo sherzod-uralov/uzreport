@@ -65,5 +65,15 @@
         "cardColor": "#FFB619"
       }
     ]
+  },
+  "education": {
+    "kunduzgi": "Kunduzgi",
+    "sirtqi": "Sirtqi",
+    "magistratura": "Magistratura",
+    "bakalavr": "Bakalavr",
+    "dan": "dan",
+    "gacha": "gacha ta'lim granti",
+    "jurnalistika": "Jurnalistika",
+    "yonalish": "Ta'lim yo'nalishlarimiz"
   }
 }
