@@ -21,13 +21,17 @@ const Hero = () => {
   return (
     <section className="mt-[150px] relative">
       <article className="container">
-        <Image className="absolute right-2 " src={dots} alt="green" />
+        <Image
+          className="absolute right-2 max-xl:hidden"
+          src={dots}
+          alt="green"
+        />
         <div className="flex justify-between max-xl:flex-col">
           <div className="max-xl:block m-auto">
             <h1 className="text-[#042552] font-[700] text-[68px]">
               {t("uzreoport")}
             </h1>
-            <p className="text-[36px] font-[500] leading-[40px] pt-[7px] w-[665px]">
+            <p className="text-[36px] font-[500] leading-[40px] pt-[7px] max-md:w-auto w-[665px]">
               {t("hero_p")} <span className="text-primary">{t("hero_p1")}</span>
             </p>
             <div className="flex items-center gap-[17px] pt-[40px]">
@@ -49,7 +53,7 @@ const Hero = () => {
               </button>
             </div>
           </div>
-          <div className="relative mt-28 max-xl:mt-56 max-xl:m-auto w-[500px] max-xl:w-[500px]">
+          <div className="relative mt-28 max-md:hidden max-xl:mt-56 max-xl:m-auto w-[500px] max-xl:w-[500px]">
             <Image
               className="absolute z-10 left-0"
               src={position_green}
@@ -109,7 +113,7 @@ const Hero = () => {
                       <span className="absolute rounded-full w-4 z-10 h-4 left-[14px] -top-[5px] bg-[#0085FF] block"></span>
                     </span>
                     <p className="font-[600] text-[#0085FF80] text-center">
-                      {t("network")}
+                      {t("company")}
                     </p>
                   </div>
                   <div>
@@ -117,7 +121,7 @@ const Hero = () => {
                       <span className="absolute rounded-full w-4 z-10 h-4 left-[14px] -top-[5px] bg-[#F98600] block"></span>
                     </span>
                     <p className="font-[600] text-[#F9860080] text-center">
-                      {t("network")}
+                      {t("university_section")}
                     </p>
                   </div>
                 </div>
