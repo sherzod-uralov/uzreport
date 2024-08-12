@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslations } from "next-intl";
 import whyImg from "@/public/assets/whyUs.svg";
+import checkmark from "@/public/assets/whyUs.svg";
 import Image from "next/image";
 const WhuUs = () => {
   const t = useTranslations("WhyUs");
@@ -40,6 +41,7 @@ const WhuUs = () => {
           <h1 className="text-[40px] font-bold leading-[53px] tracking-[-1px] text-[#042552]">
             {t("reasons.0")}
           </h1>
+          <div className="mt-[60px]"></div>
         </div>
       </div>
     </section>

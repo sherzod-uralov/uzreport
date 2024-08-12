@@ -5,6 +5,7 @@ import React from "react";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import Navbar from "@/app/components/main/navbar";
+import Footer from "@/app/components/main/Footer";
 
 const inter = Manrope({ subsets: ["latin"] });
 
@@ -27,6 +28,7 @@ export default async function RootLayout({
         <NextIntlClientProvider locale={params.locale} messages={messages}>
           <Navbar />
           {children}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

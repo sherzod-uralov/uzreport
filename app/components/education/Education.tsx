@@ -7,7 +7,7 @@ const Education = () => {
   return (
     <section className="mt-32">
       <article className="container max-sm:flex-col max-sm:justify-center">
-        <h1 className="text-[40px] font-bold leading-[53px] tracking-[-1px] text-[#042552] mb-[41px] max-sm:text-[35px] max-sm:text-center">
+        <h1 className="text-[32px] font-bold leading-[53px] tracking-[-1px] text-[#042552] mb-[41px] max-sm:text-[35px] max-sm:text-center">
           {t("yonalish")}
         </h1>
         <div className="w-full">
