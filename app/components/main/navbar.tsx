@@ -3,7 +3,7 @@
 import { useRouter, usePathname } from "next/navigation";
 import Cookies from "js-cookie";
 import React, { useEffect, useState } from "react";
-import logoUzreport from "@/public/assets/logo.svg";
+import logoUzreport from "@/public/assets/uzreport_logo.svg";
 import logoNordic from "@/public/assets/university_logo.svg";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
@@ -27,7 +27,7 @@ const Navbar = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIsTopLogo((prev) => !prev);
-    }, 5000);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
@@ -67,7 +67,7 @@ const Navbar = () => {
               src={logoNordic}
               alt="Logo 2"
               height={50}
-              className={`absolute transition-all duration-700 ${isTopLogo ? "top-full opacity-0" : "top-2 opacity-100"}`}
+              className={`absolute transition-all duration-700 ${isTopLogo ? "top-full opacity-0" : "top-4 opacity-100"}`}
             />
           </div>
 
