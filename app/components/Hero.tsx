@@ -22,8 +22,8 @@ const Hero = () => {
     <section className="mt-[150px] relative">
       <article className="container">
         <Image className="absolute right-2 " src={dots} alt="green" />
-        <div className="flex  justify-between">
-          <div>
+        <div className="flex justify-between max-xl:flex-col">
+          <div className="max-xl:block m-auto">
             <h1 className="text-[#042552] font-[700] text-[68px]">
               {t("uzreoport")}
             </h1>
@@ -49,7 +49,7 @@ const Hero = () => {
               </button>
             </div>
           </div>
-          <div className="relative mt-28 w-[500px]">
+          <div className="relative mt-28 max-xl:mt-56 max-xl:m-auto w-[500px] max-xl:w-[500px]">
             <Image
               className="absolute z-10 left-0"
               src={position_green}
