@@ -9,6 +9,9 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { IoIosArrowDown } from "react-icons/io";
+import { RiMenu3Fill } from "react-icons/ri";
+import { CloseIcon } from "next/dist/client/components/react-dev-overlay/internal/icons/CloseIcon";
+import { IoClose } from "react-icons/io5";
 
 const languages = [
   { value: "uz", label: "O‘zbek" },
@@ -23,6 +26,7 @@ const Navbar = () => {
   const [defaultLang, setDefaultLang] = useState("uz");
   const t = useTranslations("nav");
   const [isTopLogo, setIsTopLogo] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -71,41 +75,82 @@ const Navbar = () => {
             />
           </div>
 
-          <ul className="flex items-center gap-12 font-[500]">
-            <Link href={"/"}>{t("work")}</Link>
+          <ul
+            className={`transition-all ease-in-out flex ${menuOpen ? "max-lg:right-0" : "max-lg:-right-[100%]"} items-center max-sm:w-2/3 max-lg:w-1/2 max-lg:justify-center max-lg:shadow-2xl max-lg:fixed max-lg:h-screen max-lg:flex-col max-lg:top-0  z-50 max-lg:bg-white gap-12 font-[500]`}
+          >
+            <div className="w-full max-lg:flex hidden text-2xl absolute top-4 items-center justify-between px-4">
+              <div className="relative">
+                <button
+                  onClick={() => setIsOpen(!isOpen)}
+                  className="bg-[#F1F8FF] h-10 w-28 px-4 py-2 text-sm rounded-md border border-gray-300 focus:outline-none focus:border-[#3D9386] transition duration-300 ease-in-out transform hover:scale-105 flex justify-between items-center"
+                >
+                  {languages.find((lang) => lang.value === defaultLang)?.label}
+                  <IoIosArrowDown />
+                </button>
+                {isOpen && (
+                  <div className="absolute z-[2000] mt-1 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+                    <div
+                      className="py-1"
+                      role="menu"
+                      aria-orientation="vertical"
+                      aria-labelledby="options-menu"
+                    >
+                      {languages.map((lang) => (
+                        <button
+                          key={lang.value}
+                          onClick={() => changeLanguage(lang.value)}
+                          className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                          role="menuitem"
+                        >
+                          {lang.label}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+              <IoClose onClick={() => setMenuOpen(false)} />
+            </div>
+            <Link href={"#work"}>{t("work")}</Link>
             <Link href={"/"}>{t("nima_uchun")}</Link>
             <Link href={"/"}>{t("category")}</Link>
             <Link href={"/"}>{t("contact")}</Link>
           </ul>
-          <div className="relative">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="bg-[#F1F8FF] h-10 w-28 px-4 py-2 text-sm rounded-md border border-gray-300 focus:outline-none focus:border-[#3D9386] transition duration-300 ease-in-out transform hover:scale-105 flex justify-between items-center"
-            >
-              {languages.find((lang) => lang.value === defaultLang)?.label}
-              <IoIosArrowDown />
-            </button>
-            {isOpen && (
-              <div className="absolute z-[2000] mt-1 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
-                <div
-                  className="py-1"
-                  role="menu"
-                  aria-orientation="vertical"
-                  aria-labelledby="options-menu"
-                >
-                  {languages.map((lang) => (
-                    <button
-                      key={lang.value}
-                      onClick={() => changeLanguage(lang.value)}
-                      className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-                      role="menuitem"
-                    >
-                      {lang.label}
-                    </button>
-                  ))}
+          <div className="flex items-center flex-row-reverse">
+            <RiMenu3Fill
+              onClick={() => setMenuOpen(true)}
+              className="max-lg:block hidden text-2xl"
+            />
+            <div className="max-lg:hidden block relative">
+              <button
+                onClick={() => setIsOpen(!isOpen)}
+                className="bg-[#F1F8FF] h-10 w-28 px-4 py-2 text-sm rounded-md border border-gray-300 focus:outline-none focus:border-[#3D9386] transition duration-300 ease-in-out transform hover:scale-105 flex justify-between items-center"
+              >
+                {languages.find((lang) => lang.value === defaultLang)?.label}
+                <IoIosArrowDown />
+              </button>
+              {isOpen && (
+                <div className="absolute z-[2000] mt-1 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+                  <div
+                    className="py-1"
+                    role="menu"
+                    aria-orientation="vertical"
+                    aria-labelledby="options-menu"
+                  >
+                    {languages.map((lang) => (
+                      <button
+                        key={lang.value}
+                        onClick={() => changeLanguage(lang.value)}
+                        className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                        role="menuitem"
+                      >
+                        {lang.label}
+                      </button>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            )}
+              )}
+            </div>
           </div>
         </div>
       </div>

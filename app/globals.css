@@ -13,3 +13,7 @@
 .box-shadow-hero{
     box-shadow: 0px 6.9px 69.03px 0px #0425521A;
 }
+
+html{
+    scroll-behavior: smooth;
+}

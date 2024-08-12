@@ -15,7 +15,7 @@ const Vacations = () => {
   const t = useTranslations("vacations");
   console.log(t("cards"));
   return (
-    <section className="pt-[360px]">
+    <section id="work" className="pt-[360px] max-sm:pt-20">
       <article className="container ">
         <div className="flex justify-center items-center mt-5 mb-[74px] ">
           <Image

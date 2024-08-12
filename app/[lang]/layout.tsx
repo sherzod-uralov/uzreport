@@ -25,7 +25,7 @@ export default async function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <NextIntlClientProvider locale={params.locale} messages={messages}>
-
+          <Navbar />
           {children}
         </NextIntlClientProvider>
       </body>

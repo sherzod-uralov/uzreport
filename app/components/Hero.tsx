@@ -9,6 +9,7 @@ import position_blue from "@/public/assets/Ellipse 47.png";
 import position_white from "@/public/assets/Ellipse 49.png";
 import position_blue_stick from "@/public/assets/Ellipse 48.png";
 import swiper_image from "@/public/assets/hero_image.png";
+import swiper_image2 from "@/public/assets/Rectangle 29.png";
 import dots from "@/public/assets/dots (1).svg";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -19,7 +20,7 @@ const Hero = () => {
   const t = useTranslations("hero");
 
   return (
-    <section className="mt-[150px] relative">
+    <section className="mt-[150px] max-sm:mt-[20px] relative">
       <article className="container">
         <Image
           className="absolute right-2 max-xl:hidden"
@@ -28,32 +29,32 @@ const Hero = () => {
         />
         <div className="flex justify-between max-xl:flex-col">
           <div className="max-xl:block m-auto">
-            <h1 className="text-[#042552] font-[700] text-[68px]">
+            <h1 className="text-[#042552] max-sm:text-[40px] font-[700] text-[68px]">
               {t("uzreoport")}
             </h1>
-            <p className="text-[36px] font-[500] leading-[40px] pt-[7px] max-md:w-auto w-[665px]">
+            <p className="text-[36px] font-[500] leading-[40px] max-sm:text-[22px] pt-[7px] max-md:w-auto w-[665px]">
               {t("hero_p")} <span className="text-primary">{t("hero_p1")}</span>
             </p>
-            <div className="flex items-center gap-[17px] pt-[40px]">
-              <div className="flex gap-3">
+            <div className="flex justify-between max-sm:items-start max-sm:shadow-none max-sm:py-2 max-sm:pl-0 max-sm:rounded-xl max-sm:flex-col items-center shadow-gray-200 shadow-xl rounded-full pl-3 gap-[17px] max-sm:mt-2 mt-[40px]">
+              <div className="flex gap-3 max-sm:hidden max-sm:pl-3">
                 <Image src={pencil} alt="pen" />
                 <p className="text-[16px] text-[#8191A8] font-[500]">
                   {t("agency")}
                 </p>
               </div>
-              <span className="border-gray-200 h-[24px] border-[2px]"></span>
-              <div className="flex gap-3">
+              <span className="border-gray-200 max-sm:hidden h-[24px] rotate-0 max-sm:w-full max-sm:h-auto max-sm:border-[1px] block border-[2px]"></span>
+              <div className="flex gap-3 max-sm:hidden max-sm:pl-3">
                 <Image src={location} alt="pen" />
                 <p className="text-[16px] text-[#8191A8] font-[500]">
                   {t("university")}
                 </p>
               </div>
-              <button className="bg-primary text-white py-[14px] px-[10px] rounded-full">
+              <button className="bg-primary max-sm:px-10 block text-white py-[14px] px-[10px] rounded-full">
                 {t("apply")}
               </button>
             </div>
           </div>
-          <div className="relative mt-28 max-md:hidden max-xl:mt-56 max-xl:m-auto w-[500px] max-xl:w-[500px]">
+          <div className="relative mt-28 max-sm:hidden block max-xl:mt-56 max-xl:m-auto w-[500px] max-xl:w-[500px]">
             <Image
               className="absolute z-10 left-0"
               src={position_green}
@@ -95,7 +96,7 @@ const Hero = () => {
                   />
                 </SwiperSlide>
               </Swiper>
-              <div className="w-[319px] absolute -right-20 bottom-20 box-shadow-hero pt-[17px] pr-[47px] pl-[17px] pb-[26px] z-40 rounded-[11.51px] bg-white h-[137px]">
+              <div className="w-[319px] absolute max-md:right-[105px] -right-20 bottom-20 box-shadow-hero pt-[17px] pr-[47px] pl-[17px] pb-[26px] z-40 rounded-[11.51px] bg-white h-[137px]">
                 <h2 className="font-[700] text-[#042552] text-[22px] leading-[28.76px]">
                   {t("professional")}
                 </h2>
@@ -124,6 +125,59 @@ const Hero = () => {
                       {t("university_section")}
                     </p>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="relative w-full mt-10 max-sm:block hidden">
+            <Swiper
+              effect="fade"
+              modules={[EffectFade]}
+              className=" absolute left-0 top-0 h-full"
+            >
+              <SwiperSlide className="flex items-center justify-center">
+                <Image
+                  src={swiper_image2}
+                  className="w-full object-cover rounded-sm"
+                  alt=""
+                />
+              </SwiperSlide>
+              <SwiperSlide className="flex items-center justify-center">
+                <Image
+                  src={swiper_image2}
+                  className="w-full object-cover rounded-sm"
+                  alt=""
+                />
+              </SwiperSlide>
+            </Swiper>
+            <div className=" absolute -bottom-10 w-full max-sm:shadow-md max-sm:rounded-t-none box-shadow-hero pt-[17px] pr-[47px] pl-[17px] pb-[26px] z-40 rounded-[11.51px] bg-white h-[137px]">
+              <h2 className="font-[700] text-[#042552] text-[22px] leading-[28.76px]">
+                {t("professional")}
+              </h2>
+              <div className="flex items-center mt-6 justify-between">
+                <div>
+                  <span className="w-[46px] m-auto mb-[8px] relative h-[5px] bg-[#43BA7F] block">
+                    <span className="absolute rounded-full w-4 z-10 h-4 left-[14px] -top-[5px] bg-[#43BA7F] block"></span>
+                  </span>
+                  <p className="font-[600] text-[#43BA7F] text-center">
+                    {t("network")}
+                  </p>
+                </div>
+                <div>
+                  <span className="w-[46px] m-auto mb-[8px] relative h-[5px] bg-[#0085FF] block">
+                    <span className="absolute rounded-full w-4 z-10 h-4 left-[14px] -top-[5px] bg-[#0085FF] block"></span>
+                  </span>
+                  <p className="font-[600] text-[#0085FF80] text-center">
+                    {t("company")}
+                  </p>
+                </div>
+                <div>
+                  <span className="w-[46px] m-auto mb-[8px] relative h-[5px] bg-[#F98600] block">
+                    <span className="absolute rounded-full w-4 z-10 h-4 left-[14px] -top-[5px] bg-[#F98600] block"></span>
+                  </span>
+                  <p className="font-[600] text-[#F9860080] text-center">
+                    {t("university_section")}
+                  </p>
                 </div>
               </div>
             </div>
