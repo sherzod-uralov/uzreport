@@ -18,7 +18,9 @@
     "university_section": "Oliy ta'lim muassasasi"
   },
   "vacations": {
-    "title": "Talabalar uchun o‘qish davomida “UzReport TV”, “FTV” telekanallarida quyidagi ish o'rinlarida daromad topish imkoniyati yaratiladi.",
+    "title1": "Talabalar uchun o‘qish davomida",
+    "title2": "“UzReport TV”, “FTV”",
+    "title3": "telekanallarida quyidagi ish o'rinlarida daromad topish imkoniyati yaratiladi.",
     "cards": [
       {
         "title": "Muxbir",

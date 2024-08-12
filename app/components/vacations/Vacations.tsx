@@ -15,15 +15,15 @@ const Vacations = () => {
   const t = useTranslations("vacations");
   console.log(t("cards"));
   return (
-    <section className="pt-[360px] " >
+    <section className="pt-[360px]  max-sm:pt-[100px]" >
         <article className="container " >
-            <div className="flex justify-center items-center mt-5 ">
-                <Image src={dots} alt="dots" className="left-0 absolute"/>
-                <h1 className=" text-[40px] font-bold leading-[53px] tracking-[-1px] text-center">
-                    {t("title")}
+            <div className="flex justify-center items-center mt-5 mb-[74px] ">
+                <Image src={dots} alt="dots" className="left-0 absolute w-[70px] max-xl:hidden"/>
+                <h1 className=" text-[40px] font-bold leading-[53px] tracking-[-1px] text-center max-sm:text-[17px] max-sm:leading-none max-sm:tracking-normal ">
+                    {t("title1")}  <span className="text-[#3D9386]">{t("title2")} </span>   {t("title3")}
                 </h1>
             </div>
-            <div className="grid grid-cols-4 gap-[24px]">
+            <div className="grid grid-cols-4 gap-[24px] max-sm:grid-cols-1 justify-center ">
                 {[
                     cardImg1,
                     cardImg2,
@@ -34,7 +34,7 @@ const Vacations = () => {
                     cardImg7,
                     cardImg8,
                 ].map((i, e) => (
-                    <div className="flex border border-solid border-[#EBEFF6] w-[306px] rounded-md  items-center ">
+                    <div className="flex border border-solid border-[#EBEFF6] w-[306px] rounded-md  items-center max-sm:w-full ">
                         <div
                             style={{backgroundColor: t(`cards.${e}.cardColor`)}}
                             className="w-[60px] h-[60px] flex justify-center items-center ml-[30px] mt-[30px] mb-[30px] rounded-[10px]"
