@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 const Education = () => {
   const t = useTranslations("education");
   return (
-    <section className="mt-5">
+    <section className="mt-16">
       <article className="container max-sm:flex-col max-sm:justify-center">
 
         <h1 className="text-[40px] font-bold leading-[53px] tracking-[-1px] text-[#042552] mb-6 max-sm:text-[35px] max-sm:text-center">

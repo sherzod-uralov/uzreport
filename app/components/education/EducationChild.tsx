@@ -31,7 +31,7 @@ const EducationChild = ({
         <p className="text-[#042552] text-[40px] font-bold leading-[53px] tracking-[-1px] max-md:text-[30px] ">
           {kod} - {name}
         </p>
-        <div className="flex justify-center items-center mt-5">
+        <div className="flex max-sm:justify-center items-center mt-5">
           <button className="  rounded-xl border px-4 py1 border-[#46658B] w-[100px] h-[24px]  max-md:px-0">
             <h2 className="text-sm font-bold leading-5 text-center text-[#46658B]">
               {period}{" "}

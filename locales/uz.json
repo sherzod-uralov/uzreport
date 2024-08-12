@@ -75,5 +75,16 @@
     "gacha": "gacha ta'lim granti",
     "jurnalistika": "Jurnalistika",
     "yonalish": "Ta'lim yo'nalishlarimiz"
+  },
+  "WhyUs": {
+    "title": "Biz bilan ta’limda zavqlaning!",
+    "reasons": [
+      "Nega aynan biz?",
+      "Kafolatlangan ish joylari",
+      "Barchaga 20-100% gacha ta’lim granti",
+      "Dual ta’lim",
+      "Xorijiy va mahalliy ilmiy grantlar",
+      "Work and Travel dasturi"
+    ]
   }
 }
