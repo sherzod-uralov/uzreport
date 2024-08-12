@@ -39,7 +39,7 @@ const Vacations = () => {
             cardImg7,
             cardImg8,
           ].map((i, e) => (
-            <div className="flex  border border-solid border-[#EBEFF6] w-[300px]  rounded-md  items-center max-sm:w-full   ">
+            <div className="flex flex-grow border border-solid border-[#EBEFF6] w-[300px]  rounded-md  items-center max-sm:w-full   ">
               <div
                 style={{ backgroundColor: t(`cards.${e}.cardColor`) }}
                 className="w-[60px] h-[60px] flex justify-center items-center ml-[30px] mt-[30px] mb-[30px] rounded-[10px]"
