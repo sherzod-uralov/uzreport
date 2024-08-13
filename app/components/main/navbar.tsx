@@ -2,7 +2,7 @@
 
 import { useRouter, usePathname } from "next/navigation";
 import Cookies from "js-cookie";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import logoUzreport from "@/public/assets/uzreport_logo.svg";
 import logoNordic from "@/public/assets/university_logo.svg";
 import Image from "next/image";
@@ -10,7 +10,6 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { IoIosArrowDown } from "react-icons/io";
 import { RiMenu3Fill } from "react-icons/ri";
-import { CloseIcon } from "next/dist/client/components/react-dev-overlay/internal/icons/CloseIcon";
 import { IoClose } from "react-icons/io5";
 
 const languages = [
@@ -25,8 +24,10 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [defaultLang, setDefaultLang] = useState("uz");
   const t = useTranslations("nav");
-  const [isTopLogo, setIsTopLogo] = useState(true);
+  const [isTopLogo, setIsTopLogo] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const menuRef = useRef<any>(null);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -56,6 +57,19 @@ const Navbar = () => {
     Cookies.set("lang", lang, { expires: 365 });
   };
 
+  const handleClickOutside = (event: any) => {
+    if (menuRef.current && !menuRef.current.contains(event.target)) {
+      setMenuOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
     <nav className="py-5">
       <div className="container">
@@ -76,6 +90,7 @@ const Navbar = () => {
           </div>
 
           <ul
+            ref={menuRef} // Присваиваем ref нашему меню
             className={`transition-all ease-in-out flex ${menuOpen ? "max-lg:right-0" : "max-lg:-right-[100%]"} items-center max-sm:w-2/3 max-lg:w-1/2 max-lg:justify-center max-lg:shadow-2xl max-lg:fixed max-lg:h-screen max-lg:flex-col max-lg:top-0  z-50 max-lg:bg-white gap-12 font-[500]`}
           >
             <div className="w-full max-lg:flex hidden text-2xl absolute top-4 items-center justify-between px-4">
@@ -111,10 +126,18 @@ const Navbar = () => {
               </div>
               <IoClose onClick={() => setMenuOpen(false)} />
             </div>
-            <Link href={"#work"} onClick={() => setMenuOpen(false)}>{t("work")}</Link>
-            <Link href={"#whyus"} onClick={() => setMenuOpen(false)}>{t("nima_uchun")}</Link>
-            <Link href={"#education"} onClick={() => setMenuOpen(false)}>{t("category")}</Link>
-            <Link href={"/"} onClick={() => setMenuOpen(false)}>{t("contact")}</Link>
+            <Link href={"#work"} onClick={() => setMenuOpen(false)}>
+              {t("work")}
+            </Link>
+            <Link href={"#whyus"} onClick={() => setMenuOpen(false)}>
+              {t("nima_uchun")}
+            </Link>
+            <Link href={"#education"} onClick={() => setMenuOpen(false)}>
+              {t("category")}
+            </Link>
+            <Link href={"/"} onClick={() => setMenuOpen(false)}>
+              {t("contact")}
+            </Link>
           </ul>
           <div className="flex items-center flex-row-reverse">
             <RiMenu3Fill

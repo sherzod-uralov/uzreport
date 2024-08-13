@@ -72,26 +72,40 @@ const Contact = () => {
                 alt=""
               />
             </div>
-            <div className="w-1/2 max-xl:w-full max-xl:gap-4 max-md:flex-col max-xl:flex">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23977.31661227081!2d69.21817961753031!3d41.305283213841385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b359ab47501%3A0x618cedae4747d331!2sNordic%20International%20University!5e0!3m2!1sru!2s!4v1723535500885!5m2!1sru!2s"
-                height="280"
-                width="600"
-                style={{ border: "none" }}
-                allowFullScreen={false}
-                loading="lazy"
-                className="mb-3 max-xl:w-full"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23977.31661227081!2d69.21817961753031!3d41.305283213841385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8ba61d1cdb9b%3A0x3da780ce3c5c96af!2sNordic%20International%20University%20Campus%202!5e0!3m2!1sru!2s!4v1723539556704!5m2!1sru!2s"
-                height="280"
-                width="600"
-                className="max-xl:w-full"
-                allowFullScreen={false}
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
+            <div className="w-[1200px] h-full max-xl:w-full max-xl:gap-4 max-md:flex-col max-xl:flex">
+              <div className="relative h-[280px] group rounded-md w-full overflow-hidden">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23977.31661227081!2d69.21817961753031!3d41.305283213841385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b359ab47501%3A0x618cedae4747d331!2sNordic%20International%20University!5e0!3m2!1sru!2s!4v1723535500885!5m2!1sru!2s"
+                  width="600"
+                  style={{ border: "none" }}
+                  allowFullScreen={false}
+                  loading="lazy"
+                  className="w-full h-full"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+                <div className="absolute max-sm:hidden inset-0 group-hover:left-[100%] bg-black bg-opacity-40 flex items-center justify-center text-white opacity-100 transition-all duration-300">
+                  <h2 className="text-xl -tracking-tighter group-hover:hidden">
+                    {" "}
+                    Chilonzor filiali{" "}
+                  </h2>
+                </div>
+              </div>
+              <div className="relative h-[280px] group rounded-md w-full overflow-hidden mt-3">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23977.31661227081!2d69.21817961753031!3d41.305283213841385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8ba61d1cdb9b%3A0x3da780ce3c5c96af!2sNordic%20International%20University%20Campus%202!5e0!3m2!1sru!2s!4v1723539556704!5m2!1sru!2s"
+                  style={{ border: "none" }}
+                  allowFullScreen={false}
+                  loading="lazy"
+                  className="w-full h-full"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+                <div className="absolute max-sm:hidden inset-0 group-hover:right-[100%] bg-black bg-opacity-40 flex items-center justify-center text-white opacity-100 transition-all duration-300">
+                  <h2 className="text-xl -tracking-tighter group-hover:hidden">
+                    {" "}
+                    Xadra filiali{" "}
+                  </h2>
+                </div>
+              </div>
             </div>
           </div>
         </div>
