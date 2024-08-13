@@ -52,7 +52,7 @@ const Footer = () => {
               </p>
             </div>
             <div className="flex gap-[91px] max-sm:gap-[40px] max-md:flex-col max-sm:mt-[40px]">
-              <div className="flex items-start max-sm:justify-between max-sm:gap-0 gap-[110px]">
+              <div className="flex  max-sm:justify-between max-sm:gap-0 gap-[110px]">
                 <ul className="flex flex-col gap-4  text-white">
                   <Link
                     href={"#about"}
@@ -67,26 +67,13 @@ const Footer = () => {
                     {t("our_programs")}
                   </Link>
                   <Link
-                    href={"#partners"}
-                    className="font-[400] text-nowrap text-[16px]"
-                  >
-                    {t("our_partners")}
-                  </Link>
-                </ul>
-                <ul className="flex flex-col gap-4 text-white">
-                  <Link
-                    href={"#why"}
-                    className="font-[400] text-nowrap text-[16px]"
+                      href={"#whyus"}
+                      className="font-[400] text-nowrap text-[16px]"
                   >
                     {t("why_us")}
                   </Link>
-                  <Link
-                    href={"#life"}
-                    className="font-[400] text-nowrap text-[16px]"
-                  >
-                    {t("student_life")}
-                  </Link>
                 </ul>
+
               </div>
               <div>
                 <h2 className="text-[20px] font-[500] text-white pb-2.5">
