@@ -41,6 +41,7 @@ const Hero = () => {
                 <p className="text-[16px] text-[#8191A8] font-[500]">
                   {t("agency")}
                 </p>
+                z`
               </div>
               <span className="border-gray-200 max-sm:hidden h-[24px] rotate-0 max-sm:w-full max-sm:h-auto max-sm:border-[1px] block border-[1px]"></span>
               <div className="flex gap-3 max-sm:hidden max-sm:pl-3">
