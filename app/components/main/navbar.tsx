@@ -111,10 +111,10 @@ const Navbar = () => {
               </div>
               <IoClose onClick={() => setMenuOpen(false)} />
             </div>
-            <Link href={"#work"} className="jonim">{t("work")}</Link>
-            <Link href={"/"}>{t("nima_uchun")}</Link>
-            <Link href={"/"}>{t("category")}</Link>
-            <Link href={"/"}>{t("contact")}</Link>
+            <Link href={"#work"} onClick={() => setMenuOpen(false)}>{t("work")}</Link>
+            <Link href={"#whyus"} onClick={() => setMenuOpen(false)}>{t("nima_uchun")}</Link>
+            <Link href={"#education"} onClick={() => setMenuOpen(false)}>{t("category")}</Link>
+            <Link href={"/"} onClick={() => setMenuOpen(false)}>{t("contact")}</Link>
           </ul>
           <div className="flex items-center flex-row-reverse">
             <RiMenu3Fill
