@@ -107,6 +107,7 @@
     "email": "demo@gmail.com",
     "address": "132 Dartmouth ko'chasi, Boston, Massachusetts 02156, AQSh",
     "contact_us": "Biz bilan bog'laning",
-    "send_message": "Xabar yuborish"
+    "send_message": "Xabar yuborish",
+    "a": 2
   }
 }
