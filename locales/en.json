@@ -1,8 +1,111 @@
 {
   "nav": {
-    "work": "Ish o’rinlari",
-    "nima_uchun": "Nima uchun biz?",
-    "category": "Yo’nalishlarimiz",
-    "contact": "Bog’lanish"
+    "work": "Job Openings",
+    "nima_uchun": "Why Us?",
+    "category": "Our Programs",
+    "contact": "Contact"
+  },
+  "hero": {
+    "uzreoport": "UzReport",
+    "hero_p": "Academy of Journalism, Media, and Communications",
+    "hero_p1": "",
+    "agency": "UzReport News Agency",
+    "university": "Nordic University",
+    "apply": "Apply Now",
+    "professional": "BECOME A PROFESSIONAL",
+    "network": "Network",
+    "company": "Company",
+    "university_section": "University"
+  },
+  "vacations": {
+    "title1": "During their studies, students have the opportunity to",
+    "title2": "earn income at “UzReport TV”, “FTV”",
+    "title3": "channels in the following positions.",
+    "cards": [
+      {
+        "title": "Reporter",
+        "slots": "4 positions available",
+        "cardColor":"#645CFE"
+      },
+      {
+        "title": "Anchor",
+        "slots": "5 positions available",
+        "cardColor":"#FFB619"
+      },
+      {
+        "title": "Camera Operator",
+        "slots": "3 positions available",
+        "cardColor": "#FF1181"
+      },
+      {
+        "title": "Editor",
+        "slots": "5 positions available",
+        "cardColor": "#3D9386"
+      },
+      {
+        "title": "Technical Staff",
+        "slots": "3 positions available",
+        "cardColor": "#46658B"
+      },
+      {
+        "title": "Content Manager",
+        "slots": "4 positions available",
+        "cardColor": "#FF6C40"
+      },
+      {
+        "title": "Sound Engineer",
+        "slots": "2 positions available",
+        "cardColor": "#02C3FE"
+      },
+      {
+        "title": "SMM Assistant",
+        "slots": "3 positions available",
+        "cardColor": "#FFB619"
+      }
+    ]
+  },
+  "education": {
+    "kunduzgi": "Daytime",
+    "sirtqi": "Part-Time",
+    "magistratura": "Master's Program",
+    "bakalavr": "Bachelor's Program",
+    "dan": "from",
+    "gacha": "up to educational grant",
+    "jurnalistika": "Journalism",
+    "yonalish": "Our Educational Programs"
+  },
+  "WhyUs": {
+    "title": "Enjoy Your Education with Us!",
+
+    "reasons": [
+      "Why Choose Us?",
+      "Guaranteed Job Placement",
+      "20-100% Educational Grants for Everyone",
+      "Dual Education",
+      "International and Local Research Grants",
+      "Work and Travel Program"
+    ]
+  },
+  "footer": {
+    "copyright": "© 2024 Nordic University",
+    "about_us": "About Us",
+    "our_programs": "Programs",
+    "our_partners": "Our Partners",
+    "why_us": "Why Us?",
+    "student_life": "Student Life",
+    "contact": "Contact",
+    "address": "8/2 Bunyodkor Street, Chilonzor District, Tashkent, Uzbekistan",
+    "email": "info@nordicuniversity.org",
+    "phone": "+99895 505 33 00"
+  },
+  "contact": {
+    "contact_information": "Contact Information",
+    "contact_use": "Get in Touch",
+    "phone_number": "+1012 3456 789",
+    "email": "demo@gmail.com",
+    "address": "132 Dartmouth Street, Boston, Massachusetts 02156, USA",
+    "contact_us": "Contact Us",
+    "send_message": "Send Message",
+    "a": 2
   }
 }

@@ -72,7 +72,7 @@ const WhuUs = () => {
   }, []);
 
   return (
-    <section  id="whyus" className="mt-[150px] max-lg:mt-12">
+    <section id="whyus" className="mt-[150px] max-lg:mt-12">
       <article className="container">
         <div className="flex justify-between max-lg:flex-col">
           <div ref={imageRef}>
@@ -94,9 +94,13 @@ const WhuUs = () => {
                     ref={(el: never) => (textRefs.current[index] = el)}
                     className={`${
                       index % 2 === 0 ? "lg:pl-20" : "pl-0"
-                    } flex gap-[39px] items-center justify-between`}
+                    } flex gap-[39px] max-sm:gap-[15px] items-center justify-between`}
                   >
-                    <Image src={checkmark} alt={`${index}-image`} />
+                    <Image
+                      src={checkmark}
+                      alt={`${index}-image`}
+                      className="max-sm:h-7"
+                    />
                     <h2 className="max-sm:text-[18px] text-[#042552] font-[500] text-[22px]">
                       {item.title}
                     </h2>
