@@ -32,7 +32,7 @@ const Hero = () => {
             <h1 className="text-[#042552] max-sm:text-[40px] font-[700] text-[68px]">
               {t("uzreoport")}
             </h1>
-            <p className="text-[36px] font-[500] leading-[40px] max-sm:text-[22px] pt-[7px] max-:w-auto w-[665px]">
+            <p className="text-[36px] font-[500] leading-[40px] max-sm:text-[22px] pt-[7px] max-lg:w-auto w-[665px]">
               {t("hero_p")} <span className="text-primary">{t("hero_p1")}</span>
             </p>
             <div className="flex justify-between max-sm:items-start max-sm:shadow-none max-sm:py-2 max-sm:pl-0 max-sm:rounded-xl max-sm:flex-col items-center shadow-gray-200 box-shadow-hero rounded-full pl-3 gap-[17px] max-sm:mt-2 mt-[40px]">
