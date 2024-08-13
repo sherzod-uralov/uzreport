@@ -120,7 +120,7 @@ const Navbar = () => {
             <Link href={"#education"} onClick={() => setMenuOpen(false)}>
               {t("category")}
             </Link>
-            <Link href={"/"} onClick={() => setMenuOpen(false)}>
+            <Link href={"#contact"} onClick={() => setMenuOpen(false)}>
               {t("contact")}
             </Link>
           </ul>

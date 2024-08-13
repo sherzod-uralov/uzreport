@@ -1,8 +1,110 @@
 {
   "nav": {
-    "work": "Ish o’rinlari",
-    "nima_uchun": "Nima uchun biz?",
-    "category": "Yo’nalishlarimiz",
-    "contact": "Bog’lanish"
+    "work": "Работа",
+    "nima_uchun": "Почему мы?",
+    "category": "Наши направления",
+    "contact": "Контакты"
+  },
+  "hero": {
+    "uzreoport": "UzReport",
+    "hero_p": "Академия журналистики, медиа и коммуникаций",
+    "hero_p1": "",
+    "agency": "Информационное агентство UzReport",
+    "university": "Нордический университет",
+    "apply": "Подать заявку",
+    "professional": "СТАНЬ ПРОФЕССИОНАЛОМ",
+    "network": "Сеть",
+    "company": "Компания",
+    "university_section": "Университет"
+  },
+  "vacations": {
+    "title1": "Во время учебы для студентов",
+    "title2": "на телеканалах “UzReport TV”, “FTV”",
+    "title3": "создаются возможности для заработка на следующих должностях.",
+    "cards": [
+      {
+        "title": "Корреспондент",
+        "slots": "4 места",
+        "cardColor":"#645CFE"
+      },
+      {
+        "title": "Ведущий",
+        "slots": "5 мест",
+        "cardColor":"#FFB619"
+      },
+      {
+        "title": "Оператор",
+        "slots": "3 места",
+        "cardColor": "#FF1181"
+      },
+      {
+        "title": "Монтажер",
+        "slots": "5 мест",
+        "cardColor": "#3D9386"
+      },
+      {
+        "title": "Технический работник",
+        "slots": "3 места",
+        "cardColor": "#46658B"
+      },
+      {
+        "title": "Контент-менеджер",
+        "slots": "4 места",
+        "cardColor": "#FF6C40"
+      },
+      {
+        "title": "Звукоинженер",
+        "slots": "2 места",
+        "cardColor": "#02C3FE"
+      },
+      {
+        "title": "Помощник SMM",
+        "slots": "3 места",
+        "cardColor": "#FFB619"
+      }
+    ]
+  },
+  "education": {
+    "kunduzgi": "Дневное",
+    "sirtqi": "Заочное",
+    "magistratura": "Магистратура",
+    "bakalavr": "Бакалавриат",
+    "dan": "от",
+    "gacha": "до образовательного гранта",
+    "jurnalistika": "Журналистика",
+    "yonalish": "Наши образовательные направления"
+  },
+  "WhyUs": {
+    "title": "Получайте удовольствие от образования с нами!",
+    "reasons": [
+      "Почему именно мы?",
+      "Гарантированные рабочие места",
+      "Образовательные гранты от 20 до 100% для всех",
+      "Дуальное образование",
+      "Иностранные и местные научные гранты",
+      "Программа Work and Travel"
+    ]
+  },
+  "footer": {
+    "copyright": "© 2024 Nordic University",
+    "about_us": "О нас",
+    "our_programs": "Направления",
+    "our_partners": "Наши партнеры",
+    "why_us": "Почему мы?",
+    "student_life": "Студенческая жизнь",
+    "contact": "Контакты",
+    "address": "г. Ташкент, Чиланзарский район, ул. Бунёдкор, 8/2",
+    "email": "info@nordicuniversity.org",
+    "phone": "+99895 505 33 00"
+  },
+  "contact": {
+    "contact_information": "Связаться с нами",
+    "contact_use": "контактная информация",
+    "phone_number": "+1012 3456 789",
+    "email": "demo@gmail.com",
+    "address": "ул. Дартмут, 132, Бостон, Массачусетс 02156, США",
+    "contact_us": "Свяжитесь с нами",
+    "send_message": "Отправить сообщение",
+    "a": 2
   }
 }
