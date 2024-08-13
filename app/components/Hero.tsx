@@ -163,6 +163,7 @@ const Hero = () => {
                   <p className="font-[600] text-[#43BA7F] text-center">
                     {t("network")}
                   </p>
+                  <h2></h2>
                 </div>
                 <div>
                   <span className="w-[46px] m-auto mb-[8px] relative h-[5px] bg-[#0085FF] block">
