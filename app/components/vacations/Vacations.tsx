@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from "react";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import dots from "@/public/assets/dots.svg";
 import { useTranslations } from "next-intl";
@@ -29,9 +29,9 @@ const Vacations = () => {
         },
         {
           opacity: 1,
-          transition: 0.7,
+          transition: 1,
           y: 0,
-          duration: 0.3,
+          duration: 0.2,
           ease: "power4.inOut",
           scrollTrigger: {
             trigger: card,
@@ -69,7 +69,10 @@ const Vacations = () => {
             cardImg7,
             cardImg8,
           ].map((i, e) => (
-            <div ref={(el:never) => cardsRef.current[e] = el} className="flex flex-grow border border-solid border-[#EBEFF6] w-[300px]  rounded-md  items-center max-sm:w-full  hover:shadow-[1px_0px_5px_3px_rgba(56,196,160,0.6)] transition ease-in-out delay-150  ">
+            <div
+              ref={(el: never) => (cardsRef.current[e] = el)}
+              className="flex flex-grow border border-solid border-[#EBEFF6] w-[300px]  rounded-md  items-center max-sm:w-full  hover:shadow-[1px_0px_5px_3px_rgba(56,196,160,0.6)] transition ease-in-out delay-150  "
+            >
               <div
                 style={{ backgroundColor: t(`cards.${e}.cardColor`) }}
                 className="w-[60px] h-[60px] flex justify-center items-center ml-[30px] mt-[30px] mb-[30px] rounded-[10px]"

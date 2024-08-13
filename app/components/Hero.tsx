@@ -10,11 +10,12 @@ import position_white from "@/public/assets/Ellipse 49.png";
 import position_blue_stick from "@/public/assets/Ellipse 48.png";
 import swiper_image from "@/public/assets/hero_image.png";
 import swiper_image2 from "@/public/assets/Rectangle 29.png";
+import swiper_image3 from "@/public/assets/Rectangle 30.png";
 import dots from "@/public/assets/dots (1).svg";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { EffectFade } from "swiper/modules";
+import { Autoplay, EffectFade } from "swiper/modules";
 
 const Hero = () => {
   const t = useTranslations("hero");
@@ -28,7 +29,7 @@ const Hero = () => {
           alt="green"
         />
         <div className="flex justify-between max-xl:flex-col">
-          <div className="max-xl:block m-auto">
+          <div className="max-xl:block max-lg:m-auto m-auto">
             <h1 className="text-[#042552] max-sm:text-[40px] font-[700] text-[68px]">
               {t("uzreoport")}
             </h1>
@@ -41,7 +42,6 @@ const Hero = () => {
                 <p className="text-[16px] text-[#8191A8] font-[500]">
                   {t("agency")}
                 </p>
-                z`
               </div>
               <span className="border-gray-200 max-sm:hidden h-[24px] rotate-0 max-sm:w-full max-sm:h-auto max-sm:border-[1px] block border-[1px]"></span>
               <div className="flex gap-3 max-sm:hidden max-sm:pl-3">
@@ -97,8 +97,8 @@ const Hero = () => {
                   />
                 </SwiperSlide>
               </Swiper>
-              <div className="w-[319px] absolute max-lg:right-[105px] right-0 bottom-20 box-shadow-hero pt-[17px] pr-[47px] pl-[17px] pb-[26px] z-40 rounded-[11.51px] bg-white h-[137px]">
-                <h2 className="font-[700] text-[#042552] text-[22px] leading-[28.76px]">
+              <div className="w-[319px] absolute max-lg:right-[105px] right-0 bottom-20 box-shadow-hero pt-[17px] px-5 pb-[26px] z-40 rounded-[11.51px] bg-white h-[137px]">
+                <h2 className="font-[700] text-[#042552] text-[18px] leading-[28.76px]">
                   {t("professional")}
                 </h2>
                 <div className="flex items-center mt-6 justify-between">
@@ -131,24 +131,34 @@ const Hero = () => {
             </div>
           </div>
           <div className="relative w-full mt-10 max-sm:block hidden">
-            <Swiper effect="fade" modules={[EffectFade]} className=" h-full">
+            <Swiper
+              spaceBetween={15}
+              effect="coverflow"
+              autoplay={{
+                delay: 1000,
+              }}
+              speed={1500}
+              loop={true}
+              modules={[EffectFade, Autoplay]}
+              className=" h-full"
+            >
               <SwiperSlide className="flex items-center justify-center">
                 <Image
                   src={swiper_image2}
-                  className="w-full object-cover rounded-sm"
+                  className="w-full object-contain rounded-sm"
                   alt=""
                 />
               </SwiperSlide>
               <SwiperSlide className="flex items-center justify-center">
                 <Image
-                  src={swiper_image2}
+                  src={swiper_image3}
                   className="w-full object-cover rounded-sm"
                   alt=""
                 />
               </SwiperSlide>
             </Swiper>
-            <div className=" absolute -bottom-10 w-full max-sm:shadow-md max-sm:rounded-t-none box-shadow-hero pt-[17px] pr-[47px] pl-[17px] pb-[26px] z-40 rounded-[11.51px] bg-white h-[137px]">
-              <h2 className="font-[700] text-[#042552] text-[22px] leading-[28.76px]">
+            <div className=" absolute -bottom-10 w-full max-sm:shadow-md max-sm:rounded-t-none box-shadow-hero pt-[17px] pr-[90px] pl-[17px] pb-[26px] z-40 rounded-[11.51px] bg-white h-[137px]">
+              <h2 className="font-[700] text-[#042552] text-[18px] leading-[28.76px]">
                 {t("professional")}
               </h2>
               <div className="flex items-center mt-6 justify-between">
