@@ -3,6 +3,10 @@ const withNextIntl = createNextIntlPlugin();
 
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+    images: {
+        domains: ['sertificate.nordicuniversity.org'],
+    },
+};
 
 export default  withNextIntl(nextConfig);

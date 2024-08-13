@@ -36,7 +36,7 @@ const Hero = () => {
             <p className="text-[36px] font-[500] leading-[40px] max-sm:text-[22px] pt-[7px] max-lg:w-auto w-[665px]">
               {t("hero_p")} <span className="text-primary">{t("hero_p1")}</span>
             </p>
-            <div className="flex justify-between max-sm:items-start max-sm:shadow-none max-sm:py-2 max-sm:pl-0 max-sm:rounded-xl max-sm:flex-col items-center shadow-gray-200 box-shadow-hero rounded-full pl-3 gap-[17px] max-sm:mt-2 mt-[40px]">
+            <div className="flex justify-between max-sm:items-start max-sm:shadow-none max-sm:py-2 max-sm:pl-0 max-sm:rounded-xl max-sm:flex-col items-center shadow-gray-200 box-shadow-hero rounded-full pl-8 gap-[17px] max-sm:mt-2 mt-[40px]">
               <div className="flex gap-3 max-sm:hidden max-sm:pl-3">
                 <Image src={pencil} alt="pen" />
                 <p className="text-[16px] text-[#8191A8] font-[500]">
@@ -84,14 +84,22 @@ const Hero = () => {
               >
                 <SwiperSlide className="flex items-center justify-center">
                   <Image
-                    src={swiper_image}
+                    width={"600"}
+                    height={"600"}
+                    src={
+                      "https://sertificate.nordicuniversity.org/assets/farqi-yoq.png"
+                    }
                     className="object-cover rounded-[45px] h-full"
                     alt=""
                   />
                 </SwiperSlide>
                 <SwiperSlide className="flex items-center justify-center">
                   <Image
-                    src={swiper_image}
+                    src={
+                      "https://sertificate.nordicuniversity.org/assets/farqi-yoq.png"
+                    }
+                    width={"600"}
+                    height={"600"}
                     className="object-cover rounded-[45px] h-full"
                     alt=""
                   />

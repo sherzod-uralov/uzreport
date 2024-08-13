@@ -11,8 +11,8 @@ const inter = Manrope({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Uzreport tv",
-  description: "",
-  icons:{icon:"/favicon.ico"},
+  description: "Uzreport tv veb sayti",
+  icons: { icon: "/favicon.ico" },
 };
 
 export default async function RootLayout({

@@ -13,7 +13,7 @@ const Education = () => {
         <div className="w-full">
           <EducationChild
             kod="60320100"
-            price="3200000"
+            price="32 000 000"
             name={t("jurnalistika")}
             period={t("kunduzgi")}
             period2={t("bakalavr")}
@@ -26,7 +26,7 @@ const Education = () => {
         <div className="w-full">
           <EducationChild
             kod="60320100"
-            price="3200000"
+            price="34 000 000"
             name={t("jurnalistika")}
             period={t("sirtqi")}
             period2={t("bakalavr")}
@@ -38,8 +38,8 @@ const Education = () => {
         </div>
         <div className="w-full">
           <EducationChild
-            kod="70320101 "
-            price="3200000"
+            kod="70320101"
+            price="36 000 000"
             name={t("jurnalistika")}
             period={t("kunduzgi")}
             period2={t("magistratura")}
