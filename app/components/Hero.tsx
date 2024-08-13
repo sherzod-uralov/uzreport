@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
 import pencil from "@/public/assets/pen.svg";
 import location from "@/public/assets/location.svg";
@@ -15,9 +15,44 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { EffectFade } from "swiper/modules";
+import gsap from "gsap";
 
 const Hero = () => {
   const t = useTranslations("hero");
+
+  const titleRef = useRef<HTMLHeadingElement>(null);
+  const paragraphRef = useRef<HTMLParagraphElement>(null);
+  const buttonRef = useRef<HTMLDivElement>(null);
+  const imageRefs = useRef<HTMLDivElement>(null);
+  const swiperRefs = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    gsap.fromTo(
+      titleRef.current,
+      { opacity: 0, y: -50 },
+      { opacity: 1, y: 0, duration: 1.2, ease: "power3.out" },
+    );
+    gsap.fromTo(
+      paragraphRef.current,
+      { opacity: 0, y: 20 },
+      { opacity: 1, y: 0, duration: 1.2, ease: "power3.out", delay: 0.5 },
+    );
+    gsap.fromTo(
+      buttonRef.current,
+      { opacity: 0, y: 50 },
+      { opacity: 1, y: 0, duration: 1.2, ease: "power3.out", delay: 1 },
+    );
+    gsap.fromTo(
+      imageRefs.current,
+      { opacity: 0, scale: 0.9 },
+      { opacity: 1, scale: 1, duration: 1.2, ease: "power3.out", delay: 1.5 },
+    );
+    gsap.fromTo(
+      swiperRefs.current,
+      { opacity: 0, y: 50 },
+      { opacity: 1, y: 0, duration: 1.2, ease: "power3.out", delay: 2 },
+    );
+  }, []);
 
   return (
     <section className="mt-[150px] max-lg:mt-[70px] max-sm:mt-[20px] relative">
@@ -29,13 +64,22 @@ const Hero = () => {
         />
         <div className="flex justify-between max-xl:flex-col">
           <div className="max-xl:block m-auto">
-            <h1 className="text-[#042552] max-sm:text-[40px] font-[700] text-[68px]">
+            <h1
+              ref={titleRef}
+              className="text-[#042552] max-sm:text-[40px] font-[700] text-[68px]"
+            >
               {t("uzreoport")}
             </h1>
-            <p className="text-[36px] font-[500] leading-[40px] max-sm:text-[22px] pt-[7px] max-md:w-auto w-[665px]">
+            <p
+              ref={paragraphRef}
+              className="text-[36px] font-[500] leading-[40px] max-sm:text-[22px] pt-[7px] max-md:w-auto w-[665px]"
+            >
               {t("hero_p")} <span className="text-primary">{t("hero_p1")}</span>
             </p>
-            <div className="flex justify-between max-sm:items-start max-sm:shadow-none max-sm:py-2 max-sm:pl-0 max-sm:rounded-xl max-sm:flex-col items-center shadow-gray-200 box-shadow-hero rounded-full pl-3 gap-[17px] max-sm:mt-2 mt-[40px]">
+            <div
+              ref={buttonRef}
+              className="flex justify-between max-sm:items-start max-sm:shadow-none max-sm:py-2 max-sm:pl-0 max-sm:rounded-xl max-sm:flex-col items-center shadow-gray-200 box-shadow-hero rounded-full pl-3 gap-[17px] max-sm:mt-2 mt-[40px]"
+            >
               <div className="flex gap-3 max-sm:hidden max-sm:pl-3">
                 <Image src={pencil} alt="pen" />
                 <p className="text-[16px] text-[#8191A8] font-[500]">
@@ -54,7 +98,10 @@ const Hero = () => {
               </button>
             </div>
           </div>
-          <div className="relative mt-28 max-sm:hidden block max-xl:mt-56 max-xl:m-auto w-[500px] max-xl:w-[500px]">
+          <div
+            ref={imageRefs}
+            className="relative mt-28 max-sm:hidden block max-xl:mt-56 max-xl:m-auto w-[500px] max-xl:w-[500px]"
+          >
             <Image
               className="absolute z-10 left-0"
               src={position_green}
@@ -75,7 +122,10 @@ const Hero = () => {
               src={position_blue_stick}
               alt="green"
             />
-            <div className="absolute -left-12 -top-52 w-[560px] h-[610px] rounded-[45px] z-30">
+            <div
+              ref={swiperRefs}
+              className="absolute -left-12 -top-52 w-[560px] h-[610px] rounded-[45px] z-30"
+            >
               <Swiper
                 effect="fade"
                 modules={[EffectFade]}

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@types/js-cookie": "^3.0.6",
+    "gsap": "^3.12.5",
     "js-cookie": "^3.0.5",
     "next": "14.2.5",
     "next-intl": "^3.17.2",
