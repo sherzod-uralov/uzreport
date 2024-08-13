@@ -12,6 +12,7 @@ import { useTranslations } from "next-intl";
 
 const Footer = () => {
   const t = useTranslations("footer");
+  const t1 = useTranslations("nav");
 
   return (
     <section className="mt-[100px]">
@@ -61,16 +62,22 @@ const Footer = () => {
                     {t("about_us")}
                   </Link>
                   <Link
-                    href={"#program"}
+                    href={"#education"}
                     className="font-[400] text-nowrap text-[16px]"
                   >
-                    {t("our_programs")}
+                    {t1("category")}
                   </Link>
                   <Link
                       href={"#whyus"}
                       className="font-[400] text-nowrap text-[16px]"
                   >
                     {t("why_us")}
+                  </Link>
+                  <Link
+                      href={"#work"}
+                      className="font-[400] text-nowrap text-[16px]"
+                  >
+                    {t1("work")}
                   </Link>
                 </ul>
 

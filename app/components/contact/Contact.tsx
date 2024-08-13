@@ -14,7 +14,7 @@ import Image from "next/image";
 const Contact = () => {
   const t = useTranslations("contact");
   return (
-    <section className="mt-10">
+    <section id="contact" className="mt-10">
       <article className="container">
         <h2 className="text-[32px] max-sm:text-[24px] font-bold leading-[53px] tracking-[-1px] text-[#042552]">
           {t("contact_information")}
