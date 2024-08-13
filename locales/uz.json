@@ -100,5 +100,13 @@
     "email": "info@nordicuniversity.org",
     "phone": "+99895 505 33 00"
   },
-
+  "contact": {
+    "contact_information": "Biz bilan bo'g'lanish",
+    "say_something": "Jonli chatni boshlash uchun nimadir yozing!",
+    "phone_number": "+1012 3456 789",
+    "email": "demo@gmail.com",
+    "address": "132 Dartmouth ko'chasi, Boston, Massachusetts 02156, AQSh",
+    "contact_us": "Biz bilan bog'laning",
+    "send_message": "Xabar yuborish"
+  }
 }
