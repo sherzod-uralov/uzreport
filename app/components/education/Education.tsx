@@ -28,7 +28,7 @@ const Education = () => {
             kod="60320100"
             price="3200000"
             name={t("jurnalistika")}
-            period={t("kunduzgi")}
+            period={t("sirtqi")}
             period2={t("bakalavr")}
             grant1={20}
             grant2={100}
@@ -38,11 +38,11 @@ const Education = () => {
         </div>
         <div className="w-full">
           <EducationChild
-            kod="60320100"
+            kod="70320101 "
             price="3200000"
             name={t("jurnalistika")}
             period={t("kunduzgi")}
-            period2={t("bakalavr")}
+            period2={t("magistratura")}
             grant1={20}
             grant2={100}
             gacha={t("gacha")}
