@@ -8,7 +8,7 @@ import Contact from "@/app/components/contact/Contact";
 
 export default function Home() {
   return (
-    <main>
+    <main className="overflow-x-hidden">
       <Hero />
       <Vacations />
       <WhuUs />
