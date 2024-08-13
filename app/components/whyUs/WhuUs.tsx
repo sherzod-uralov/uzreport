@@ -36,7 +36,7 @@ const WhuUs = () => {
             />
           </div>
           <div className="max-sm:mt-5">
-            <h1 className="text-[32px] text-center font-bold leading-[53px] tracking-[-1px] text-[#042552]">
+            <h1 className="text-[32px] max-sm:text-[24px] font-bold leading-[53px] tracking-[-1px] text-[#042552]">
               {t("reasons.0")}
             </h1>
             <div className="mt-[60px] w-full">

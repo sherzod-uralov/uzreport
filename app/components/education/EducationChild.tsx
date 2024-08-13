@@ -49,7 +49,7 @@ const EducationChild = ({
             {price} so'm{" "}
           </p>
         </div>
-        <div className="flex items-center mt-5 max-sm:justify-between">
+        <div className="flex items-center mt-5">
           <Image src={checkImg} alt="img" className="w-[30px]" />
           <p className="text-xl font-semibold leading-[42px] tracking-[-1px] ml-3 text-[#042552]  max-md:text-[18px] max-sm:text-[15px]">
             20 % - {dan} 100 % {gacha} so'm{" "}
