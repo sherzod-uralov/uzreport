@@ -72,7 +72,7 @@ const WhuUs = () => {
   }, []);
 
   return (
-    <section className="mt-[150px] max-lg:mt-12">
+    <section  id="whyus" className="mt-[150px] max-lg:mt-12">
       <article className="container">
         <div className="flex justify-between max-lg:flex-col">
           <div ref={imageRef}>
