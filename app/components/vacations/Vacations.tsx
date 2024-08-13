@@ -28,7 +28,7 @@ const Vacations = () => {
             {t("title3")}
           </h1>
         </div>
-        <div className="flex  flex-wrap  gap-3 justify-center ">
+        <div className="flex  flex-wrap  gap-3 justify-center  ">
           {[
             cardImg1,
             cardImg2,
@@ -39,7 +39,7 @@ const Vacations = () => {
             cardImg7,
             cardImg8,
           ].map((i, e) => (
-            <div className="flex flex-grow border border-solid border-[#EBEFF6] w-[300px]  rounded-md  items-center max-sm:w-full   ">
+            <div className="flex flex-grow border border-solid border-[#EBEFF6] w-[300px]  rounded-md  items-center max-sm:w-full  hover:shadow-[1px_0px_5px_3px_rgba(56,196,160,0.6)] transition ease-in-out delay-150  ">
               <div
                 style={{ backgroundColor: t(`cards.${e}.cardColor`) }}
                 className="w-[60px] h-[60px] flex justify-center items-center ml-[30px] mt-[30px] mb-[30px] rounded-[10px]"

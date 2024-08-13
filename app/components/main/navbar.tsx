@@ -111,7 +111,7 @@ const Navbar = () => {
               </div>
               <IoClose onClick={() => setMenuOpen(false)} />
             </div>
-            <Link href={"#work"}>{t("work")}</Link>
+            <Link href={"#work"} className="jonim">{t("work")}</Link>
             <Link href={"/"}>{t("nima_uchun")}</Link>
             <Link href={"/"}>{t("category")}</Link>
             <Link href={"/"}>{t("contact")}</Link>

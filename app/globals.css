@@ -17,3 +17,24 @@
 html{
     scroll-behavior: smooth;
 }
+nav a {
+    position: relative;
+    text-decoration: none;
+    color: #000;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px; /* Linkning tagidan chiziq chiqishi uchun joy belgilash */
+    width: 0;
+    height: 2px; /* Chiziqning qalinligi */
+    background-color: #3D9386; /* Chiziqning rangi */
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%; /* Chiziqning kengligini 100% qilish */
+    left: 0; /* Chiziqni chapdan boshlanishi uchun */
+}
