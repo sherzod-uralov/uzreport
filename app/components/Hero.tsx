@@ -131,11 +131,7 @@ const Hero = () => {
             </div>
           </div>
           <div className="relative w-full mt-10 max-sm:block hidden">
-            <Swiper
-              effect="fade"
-              modules={[EffectFade]}
-              className=" absolute left-0 top-0 h-full"
-            >
+            <Swiper effect="fade" modules={[EffectFade]} className=" h-full">
               <SwiperSlide className="flex items-center justify-center">
                 <Image
                   src={swiper_image2}
