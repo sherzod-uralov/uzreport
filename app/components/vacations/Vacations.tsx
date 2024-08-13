@@ -31,10 +31,10 @@ const Vacations = () => {
         },
         {
           opacity: 1,
-          transition: 0.5,
+          transition: 0.7,
           y: 0,
-          duration: 0.2,
-          ease: "sine",
+          duration: 0.3,
+          ease: "power4.inOut",
           scrollTrigger: {
             trigger: card,
             start: "top 80%",
