@@ -12,6 +12,7 @@ import cardImg7 from "@/public/assets/music_white_on_transparent 1.svg";
 import cardImg8 from "@/public/assets/social_media_white_on_transparent 1.svg";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Card from "@/app/components/vacations/VacationCard";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -29,16 +30,16 @@ const Vacations = () => {
         },
         {
           opacity: 1,
-          transition: 1,
+          transition: 4,
           y: 0,
-          duration: 0.2,
+          duration: 0.3,
           ease: "power4.inOut",
           scrollTrigger: {
             trigger: card,
             start: "top 80%",
             toggleActions: "play none none none",
           },
-          delay: index * 0.2,
+          delay: index * 0.4,
         },
       );
     });
@@ -69,27 +70,14 @@ const Vacations = () => {
             cardImg7,
             cardImg8,
           ].map((i, e) => (
-            <div
-              ref={(el: never) => (cardsRef.current[e] = el)}
-              className="flex flex-grow border border-solid border-[#EBEFF6] w-[300px]  rounded-md  items-center max-sm:w-full  hover:shadow-[1px_0px_5px_3px_rgba(56,196,160,0.6)] transition ease-in-out delay-150  "
-            >
-              <div
-                style={{ backgroundColor: t(`cards.${e}.cardColor`) }}
-                className="w-[60px] h-[60px] flex justify-center items-center ml-[30px] mt-[30px] mb-[30px] rounded-[10px]"
-              >
-                <Image src={i} alt="" />
-              </div>
-              <div className=" ml-[20px]">
-                <h1 className="text-lg font-bold leading-[26px]">
-                  {" "}
-                  {t(`cards.${e}.title`)}
-                </h1>
-                <p className="text-base font-normal leading-7">
-                  {" "}
-                  {t(`cards.${e}.slots`)}
-                </p>
-              </div>
-            </div>
+            <Card
+              key={e}
+              index={e}
+              imgSrc={i}
+              title={t(`cards.${e}.title`)}
+              slots={t(`cards.${e}.slots`)}
+              cardColor={t(`cards.${e}.cardColor`)}
+            />
           ))}
         </div>
       </article>

@@ -91,13 +91,13 @@ const EducationChild = ({
         <div className="flex items-center max-sm:justify-start">
           <Image src={money} alt="img" className="w-[30px]" />
           <p className="text-xl font-semibold leading-[42px] tracking-[-1px] ml-3 text-[#042552] max-md:text-2xl max-sm:text-xl">
-            {price} so'm
+            {price}
           </p>
         </div>
         <div className="flex items-center mt-5">
           <Image src={checkImg} alt="img" className="w-[30px]" />
           <p className="text-xl font-semibold leading-[42px] tracking-[-1px] ml-3 text-[#042552] max-md:text-[18px] max-sm:text-[15px]">
-            20 % - {dan} 100 % {gacha} so'm
+            20 % - {dan} 100 % {gacha}
           </p>
         </div>
       </div>

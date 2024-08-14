@@ -13,7 +13,7 @@ export default function middleware(req: NextRequest) {
   const url = req.nextUrl.clone();
   const pathname = url.pathname.split("/");
 
-  if (!locales.includes(pathname[1])) {
+  if (!pathname[1] || !locales.includes(pathname[1])) {
     pathname.unshift(lang as string);
     url.pathname = pathname.join("/");
     return NextResponse.redirect(url);

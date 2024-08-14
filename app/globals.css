@@ -41,3 +41,7 @@ nav a:hover::after {
     width: 100%; /* Chiziqning kengligini 100% qilish */
     left: 0; /* Chiziqni chapdan boshlanishi uchun */
 }
+
+.swiper-slide{
+    border-radius: 45px !important;
+}

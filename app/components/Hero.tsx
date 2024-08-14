@@ -8,14 +8,15 @@ import position_green from "@/public/assets/Ellipse 46.png";
 import position_blue from "@/public/assets/Ellipse 47.png";
 import position_white from "@/public/assets/Ellipse 49.png";
 import position_blue_stick from "@/public/assets/Ellipse 48.png";
-import swiper_image from "@/public/assets/hero_image.png";
+import swiper_image from "@/public/assets/1.jpg";
+import swiper_image4 from "@/public/assets/2.jpg";
 import swiper_image2 from "@/public/assets/Rectangle 29.png";
 import swiper_image3 from "@/public/assets/Rectangle 30.png";
 import dots from "@/public/assets/dots (1).svg";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { Autoplay, EffectFade } from "swiper/modules";
+import { Autoplay, EffectCoverflow, EffectFade } from "swiper/modules";
 
 const Hero = () => {
   const t = useTranslations("hero");
@@ -76,36 +77,41 @@ const Hero = () => {
               src={position_blue_stick}
               alt="green"
             />
-            <div className="absolute -left-12 -top-52 w-[560px] h-[610px] rounded-[45px] z-30">
+            <div className="absolute -left-12 -top-52 w-[590px] h-[500px] rounded-[45px] z-30">
               <Swiper
-                effect="fade"
-                modules={[EffectFade]}
-                className="max-w-full absolute top-0 h-full"
+                slidesPerView={1}
+                effect="coverflow"
+                fadeEffect={{ crossFade: true }}
+                autoplay={{
+                  delay: 3500,
+                  disableOnInteraction: false,
+                }}
+                speed={1500}
+                loop={true}
+                pagination={{ clickable: true }}
+                modules={[EffectCoverflow, Autoplay]}
+                className="w-[350px] absolute top-14 left-28 h-full"
               >
-                <SwiperSlide className="flex items-center justify-center">
+                <SwiperSlide className="rounded-[45px] flex items-center justify-center">
                   <Image
-                    width={"600"}
-                    height={"600"}
-                    src={
-                      "https://sertificate.nordicuniversity.org/assets/farqi-yoq.png"
-                    }
-                    className="object-cover rounded-[45px] h-full"
+                    width={"350"}
+                    height={"500"}
+                    src={swiper_image4}
+                    className="object-cover h-full rounded-[45px]"
                     alt=""
                   />
                 </SwiperSlide>
                 <SwiperSlide className="flex items-center justify-center">
                   <Image
-                    src={
-                      "https://sertificate.nordicuniversity.org/assets/farqi-yoq.png"
-                    }
-                    width={"600"}
-                    height={"600"}
-                    className="object-cover rounded-[45px] h-full"
+                    src={swiper_image}
+                    width={"350"}
+                    height={"500"}
+                    className="object-cover h-full rounded-[45px]"
                     alt=""
                   />
                 </SwiperSlide>
               </Swiper>
-              <div className="w-[319px] absolute max-lg:right-[105px] right-0 bottom-20 box-shadow-hero pt-[17px] px-5 pb-[26px] z-40 rounded-[11.51px] bg-white h-[137px]">
+              <div className="w-[319px] absolute max-lg:right-[105px] right-0 -bottom-7 box-shadow-hero pt-[17px] px-5 pb-[26px] z-40 rounded-[11.51px] bg-white h-[137px]">
                 <h2 className="font-[700] text-[#042552] text-[18px] leading-[28.76px]">
                   {t("professional")}
                 </h2>
