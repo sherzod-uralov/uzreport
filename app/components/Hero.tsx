@@ -92,11 +92,20 @@ const Hero = () => {
                 modules={[EffectCoverflow, Autoplay]}
                 className="w-[350px] absolute top-14 left-28 h-full"
               >
-                <SwiperSlide className="rounded-[45px] flex items-center justify-center">
+                <SwiperSlide className="flex items-center justify-center">
                   <Image
+                    src={swiper_image}
                     width={"350"}
                     height={"500"}
-                    src={swiper_image4}
+                    className="object-cover h-full rounded-[45px]"
+                    alt=""
+                  />
+                </SwiperSlide>
+                <SwiperSlide className="flex items-center justify-center">
+                  <Image
+                    src={swiper_image}
+                    width={"350"}
+                    height={"500"}
                     className="object-cover h-full rounded-[45px]"
                     alt=""
                   />

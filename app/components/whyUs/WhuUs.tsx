@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
-import whyImg from "@/public/assets/whyUs.svg";
+import whyImg from "@/public/assets/2.jpg";
 import checkmark from "@/public/assets/checkmark.svg";
 import Image from "next/image";
 import gsap from "gsap";
@@ -79,7 +79,7 @@ const WhuUs = () => {
             <Image
               src={whyImg}
               alt="img"
-              className="w-[620px] object-contain max-lg:m-auto max-lg:block h-auto"
+              className="w-[620px] rounded-xl object-contain max-lg:m-auto max-lg:block h-auto"
             />
           </div>
           <div className="max-sm:mt-5">
