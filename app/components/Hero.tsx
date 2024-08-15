@@ -95,6 +95,15 @@ const Hero = () => {
                 modules={[EffectCoverflow, Autoplay]}
                 className="w-[350px] absolute top-14 left-28 h-full"
               >
+                <SwiperSlide className="flex overflow-hidden bg-gray-100 items-center justify-center">
+                  <Image
+                    src={swiper_image6}
+                    width={"350"}
+                    height={"500"}
+                    className="object-cover h-full rounded-[45px]"
+                    alt=""
+                  />
+                </SwiperSlide>
                 <SwiperSlide className="flex overflow-hidden items-center justify-center">
                   <Image
                     src={swiper_image4}
@@ -107,15 +116,6 @@ const Hero = () => {
                 <SwiperSlide className="flex overflow-hidden items-center justify-center">
                   <Image
                     src={swiper_image}
-                    width={"350"}
-                    height={"500"}
-                    className="object-cover h-full rounded-[45px]"
-                    alt=""
-                  />
-                </SwiperSlide>
-                <SwiperSlide className="flex overflow-hidden bg-gray-100 items-center justify-center">
-                  <Image
-                    src={swiper_image6}
                     width={"350"}
                     height={"500"}
                     className="object-cover h-full rounded-[45px]"
