@@ -42,7 +42,7 @@ const Card = ({ imgSrc, title, slots, cardColor, index }: cardProps) => {
   return (
     <div
       ref={cardRef}
-      className="flex flex-grow border border-solid border-[#EBEFF6] w-[300px] rounded-md items-center max-sm:w-full hover:shadow-[1px_0px_5px_3px_rgba(56,196,160,0.6)] transition ease-in-out delay-150"
+      className="flex flex-grow border border-solid border-[#EBEFF6] w-[300px] rounded-md items-center max-sm:w-full vacans transition-shadow ease-in-out"
     >
       <div
         style={{ backgroundColor: cardColor }}

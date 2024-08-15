@@ -6,7 +6,7 @@ const withNextIntl = createNextIntlPlugin();
 const nextConfig = {
     images: {
         domains: ['sertificate.nordicuniversity.org'],
-    },
+    }
 };
 
 export default  withNextIntl(nextConfig);

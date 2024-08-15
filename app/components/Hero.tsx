@@ -51,9 +51,11 @@ const Hero = () => {
                   {t("university")}
                 </p>
               </div>
-              <button className="bg-primary max-sm:px-10 block text-white py-[14px] px-[10px] rounded-full">
-                {t("apply")}
-              </button>
+              <a href="https://admission.nordicuniversity.org" target="_blank">
+                <button className="bg-primary max-sm:px-10 block text-white py-[14px] px-[10px] rounded-full">
+                  {t("apply")}
+                </button>
+              </a>
             </div>
           </div>
           <div className="relative mt-28 max-sm:hidden block max-xl:mt-56 max-xl:m-auto w-[500px] max-xl:w-[500px]">

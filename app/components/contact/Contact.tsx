@@ -7,7 +7,6 @@ import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaFacebook, FaInstagram, FaTelegram } from "react-icons/fa";
 import image from "@/public/assets/Ellipse 793.png";
-import layer from "@/public/assets/layer.png";
 import image2 from "@/public/assets/Ellipse 794.png";
 import Image from "next/image";
 
@@ -39,7 +38,7 @@ const Contact = () => {
                   <MdEmail className="w-6 h-6 text-white" />
                   <a
                     className="text-white text-base font-normal"
-                    href="tel:+99855 508 44 00"
+                    href="mailto:info@nordicuniversity.org"
                   >
                     info@nordicuniversity.org
                   </a>
@@ -48,7 +47,7 @@ const Contact = () => {
                   <FaLocationDot className="w-6 h-6 text-white" />
                   <a
                     className="text-white text-base font-normal"
-                    href="tel:+99855 508 44 00"
+                    href="https://maps.app.goo.gl/9Lzhu9Mk4dGnYqLn8"
                   >
                     Toshkent shahar, Chilonzor tumani, Bunyodkor ko‘chasi, 8/2
                   </a>
@@ -56,13 +55,25 @@ const Contact = () => {
               </div>
               <div className="flex items-center gap-[24px]">
                 <div className="bg-primary flex items-center hover:bg-white transition-all group justify-center w-[35px] h-[35px] rounded-full">
-                  <FaInstagram className="text-white text-xl group-hover:text-black" />
+                  <a
+                    href="https://www.youtube.com/@nordic_university"
+                    target="_blank"
+                  >
+                    <FaInstagram className="text-white text-xl group-hover:text-black" />
+                  </a>
                 </div>
                 <div className="bg-primary flex items-center hover:bg-white transition-all group justify-center w-[35px] h-[35px] rounded-full">
-                  <FaTelegram className="text-white text-xl group-hover:text-black" />
+                  <a href="https://t.me/nordic_edu" target="_blank">
+                    <FaTelegram className="text-white text-xl group-hover:text-black" />
+                  </a>
                 </div>
                 <div className="bg-primary flex items-center hover:bg-white transition-all group justify-center w-[35px] h-[35px] rounded-full">
-                  <FaFacebook className="text-white text-xl group-hover:text-black" />
+                  <a
+                    href="https://www.facebook.com/nordicuniversity.edu/?ref=pages_you_manage"
+                    target="_blank"
+                  >
+                    <FaFacebook className="text-white text-xl group-hover:text-black" />
+                  </a>
                 </div>
               </div>
               <Image src={image} className="absolute bottom-0 right-0" alt="" />
