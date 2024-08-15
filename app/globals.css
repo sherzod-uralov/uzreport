@@ -45,3 +45,8 @@ nav a:hover::after {
 .swiper-slide{
     border-radius: 45px !important;
 }
+
+.swiper{
+    border-radius: 45px !important;
+    display: none;
+}

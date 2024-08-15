@@ -9,7 +9,8 @@ import position_blue from "@/public/assets/Ellipse 47.png";
 import position_white from "@/public/assets/Ellipse 49.png";
 import position_blue_stick from "@/public/assets/Ellipse 48.png";
 import swiper_image from "@/public/assets/1.jpg";
-import swiper_image4 from "@/public/assets/2.jpg";
+import swiper_image4 from "@/public/assets/22.jpg";
+import swiper_image6 from "@/public/assets/23.png";
 import swiper_image2 from "@/public/assets/Rectangle 29.png";
 import swiper_image3 from "@/public/assets/Rectangle 30.png";
 import dots from "@/public/assets/dots (1).svg";
@@ -94,7 +95,16 @@ const Hero = () => {
                 modules={[EffectCoverflow, Autoplay]}
                 className="w-[350px] absolute top-14 left-28 h-full"
               >
-                <SwiperSlide className="flex items-center justify-center">
+                <SwiperSlide className="flex overflow-hidden items-center justify-center">
+                  <Image
+                    src={swiper_image4}
+                    width={"350"}
+                    height={"500"}
+                    className="object-cover h-full rounded-[45px]"
+                    alt=""
+                  />
+                </SwiperSlide>
+                <SwiperSlide className="flex overflow-hidden items-center justify-center">
                   <Image
                     src={swiper_image}
                     width={"350"}
@@ -103,18 +113,9 @@ const Hero = () => {
                     alt=""
                   />
                 </SwiperSlide>
-                <SwiperSlide className="flex items-center justify-center">
+                <SwiperSlide className="flex overflow-hidden bg-gray-100 items-center justify-center">
                   <Image
-                    src={swiper_image}
-                    width={"350"}
-                    height={"500"}
-                    className="object-cover h-full rounded-[45px]"
-                    alt=""
-                  />
-                </SwiperSlide>
-                <SwiperSlide className="flex items-center justify-center">
-                  <Image
-                    src={swiper_image}
+                    src={swiper_image6}
                     width={"350"}
                     height={"500"}
                     className="object-cover h-full rounded-[45px]"
